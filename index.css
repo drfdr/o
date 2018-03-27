@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css?family=Oswald:bold|Tangerine|Raleway:100|Inconsolata");
+
+html{
+width:100%;
+	height:100%;
+   user-select:none;
+
+
+   }
+
+body{
+	
+}
+	
+h1{
+    font-family:"Raleway";
+    text-align: center;
+    font-size: 40px;
+    font-weight:lighter;
+    background: -webkit-linear-gradient(#5100, #0066ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	margin-top:-2px;
+  }
+
+.imginput{
+   position:absolute;
+	margin-top:150px;
+	margin-left:35px;
+	display:none;
+	border-radius:5px;
+	height:20px;
+	box-shadow:inset 0px 0px 10px 0px black;	
+}
+
+
+.plus{
+    position: absolute;
+	font-size:105px;
+	color:dimgray;
+	cursor:pointer;
+	transition:opacity 0.5s;
+    margin-left:75px;
+    margin-top:75px;
+	opacity:0.2;
+	z-index:15;
+
+
+	
+}
+
+.plus:hover{
+	opacity:1;	
+}
+
+
+
+
+.cdmimg{
+	margin:auto;
+   
+}
+
+.dmimg{
+    position:relative;
+    display:block;
+    height:300px;
+    width:200px;
+    margin:auto;
+	transition:opacity 1s;
+	box-shadow: inset 0px 0px 25px -5px black;
+	border-radius:35px;
+	z-index:0;
+
+	
+}
+
+.mimg{
+z-index: -3;
+    position:absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    border-radius:35px;
+    cursor:pointer;
+    display:none;
+    box-shadow: 0px 0px 25px -5px black;
+ -webkit-transition:transform 2s ;
+}
+.mimg:hover{
+-webkit-transition:transform 0.4s ;
+    -webkit-transform:scale(1.05);
+}
+
+.mimgmodal{
+	height:400px;
+	width:100vw;
+	margin-top:15px;
+	margin-left: calc(-50vw + 50%);
+	box-shadow: inset 0px 0px 15px -5px black;
+	margin-bottom:150px;
+    position:absolute;
+	display:none;
+}
+
+.close{
+    position: absolute;
+	height:34px;
+	width:34px;
+	z-index: 15;
+    margin-left:195px;
+    text-align: center;
+    font: 32px Arial, sans-serif;
+	background: -webkit-linear-gradient(#FFA733, #FF4930);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+	-webkit-transition:transform 0.3s;
+    display:none;
+    cursor:pointer;
+}
+
+.close:hover{
+	-webkit-transform:scale(1.07);
+}
+
+.save{
+    position: absolute;
+    z-index:5;
+  display:none;
+	height:35px;
+	width:77px;
+	box-shadow:0px 0px 15px -5px black;
+	margin-top:205px;
+	margin-left:58px;
+	border-radius:7px;
+	border-style:solid;
+	border-width:0px;
+	background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor:pointer;
+    -webkit-transition:transform 0.5s;
+
+}
+
+.save:hover{
+    -webkit-transform:scale(1.02);
+}
+
+h6{
+	text-align: center;
+	font-family:"Helvetica Neue";
+	font-weight: 100;
+	color:black;
+	font-size:25px;
+	margin-top:3px;
+	margin-bottom:0px;
+	  background: -webkit-linear-gradient(#004e92, #000428) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#settings{
+    position:absolute;
+    margin-left:55px;
+    -webkit-transition:transform 0.2s;
+    outline: 1px solid transparent;
+    border-radius:25px;
+    -webkit-backface-visibility: hidden;
+    transform:scale(1.3);
+    cursor:pointer;
+}
+#settings:hover{
+   -webkit-transform:scale(1.5);
+}
+
+
+.show{
+ display:block;	
+}
+
+.hide{
+	display:none;
+}
